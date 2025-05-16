@@ -1,0 +1,2 @@
+/Users/lordmathi2741/Documents/Cursos/App-Moviles/AlquilaFacil-MobileApp/android/app/.cxx/Debug/3q123so2/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/lordmathi2741/Documents/Cursos/App-Moviles/AlquilaFacil-MobileApp/android/app/.cxx/Debug/3q123so2/armeabi-v7a/CMakeFiles/rebuild_cache.dir

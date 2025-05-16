@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/lordmathi2741/SDK Flutter/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/lordmathi2741/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/lordmathi2741/Documents/Cursos/App-Moviles/AlquilaFacil-MobileApp/android/app/.cxx/Debug/3q123so2/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/lordmathi2741/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/lordmathi2741/Documents/Cursos/App-Moviles/AlquilaFacil-MobileApp/android/app/.cxx/Debug/3q123so2/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
