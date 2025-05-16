@@ -179,25 +179,32 @@ class _SpaceInfoState extends State<SpaceInfo> {
                         if (_startDateTime == null ||
                             _endDateTime == null) {
 
-                          await showDialog(context: context, builder: (_) => const CustomDialog(title: "Por favor selecciona las fechas y horas de inicio y fin válidas", route:"/space-info"));
+                          await showDialog(context: context,
+                              builder: (_) =>
+                              const CustomDialog(
+                                  title: "Por favor selecciona las fechas y horas de inicio y fin válidas",
+                                  route:"/space-info")
+                          );
                         }
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                PaymentScreen(
-                                  amount: spaceProvider.spaceSelected!
-                                      .nightPrice,
-                                  startDate:
-                                  _startDateTime!.toIso8601String(),
-                                  endDate: _endDateTime!.toIso8601String(),
-                                  localName:
-                                  spaceProvider.spaceSelected!.localName,
-                                  userId:
-                                  spaceProvider.spaceSelected!.userId!,
-                                  localId: spaceProvider.spaceSelected!.id,
-                                ),
-                          ),
-                        );
+                        else{
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  PaymentScreen(
+                                    amount: spaceProvider.spaceSelected!
+                                        .nightPrice,
+                                    startDate:
+                                    _startDateTime!.toIso8601String(),
+                                    endDate: _endDateTime!.toIso8601String(),
+                                    localName:
+                                    spaceProvider.spaceSelected!.localName,
+                                    userId:
+                                    spaceProvider.spaceSelected!.userId!,
+                                    localId: spaceProvider.spaceSelected!.id,
+                                  ),
+                            ),
+                          );
+                        }
                       },
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
